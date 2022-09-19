@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="styles.css">
   
   <title>Frontend Mentor | Time tracking dashboard</title>
 
@@ -16,60 +18,103 @@
 </head>
 <body>
 
-  Report for
-  Jeremy Robson
+  <div class="global-container">
 
-  Daily
-  Weekly
-  Monthly
+    <div class="first-panel">
+      <div class="user-info">
+        <div class="avatar"></div>
+        <p>Report for</p>
+        <h1>Jeremy Robson</h1>
+      </div>
 
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
+      <div class="timeframes">
+        <p>Daily</p>
+        <p>Weekly</p>
+        <p>Monthly</p>
+      </div>
 
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
+    </div>
 
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
+    <div class="dashboard">
 
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
+      <div class="dashboard-element">
+        <div class="header-img"></div>
+        <div class="element-info">
+          <div class="element-header">
+            <p>Work</p>
+            <a href="#"></a>
+          </div>
+          <h1 id="current-work"></h1>
+          <p></p>
+        </div>
+      </div>
 
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
+      <div class="dashboard-element">
+        <div class="header-img"></div>
+        <div class="element-info">
+          <div class="element-header">
+            <p>Play</p>
+            <a href="#"></a>
+          </div>
+          <h1 id="current-play"></h1>
+          <p></p>
+        </div>
+      </div>
 
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
+      <div class="dashboard-element">
+        <div class="header-img"></div>
+        <div class="element-info">
+          <div class="element-header">
+            <p>Study</p>
+            <a href="#"></a>
+          </div>
+          <h1 id="current-study"></h1>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="dashboard-element">
+        <div class="header-img"></div>
+        <div class="element-info">
+          <div class="element-header">
+            <p>Exercise</p>
+            <a href="#"></a>
+          </div>
+          <h1 id="current-exercise"></h1>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="dashboard-element">
+        <div class="header-img"></div>
+        <div class="element-info">
+          <div class="element-header">
+            <p>Social</p>
+            <a href="#"></a>
+          </div>
+          <h1 id="current-social"></h1>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="dashboard-element">
+        <div class="header-img"></div>
+        <div class="element-info">
+          <div class="element-header">
+            <p>Self Care</p>
+            <a href="#"></a>
+          </div>
+          <h1 id="current-selfcare"></h1>
+          <p></p>
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </div>
+
 
   
   <div class="attribution">
