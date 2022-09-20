@@ -3,13 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  
   <title>Frontend Mentor | Time tracking dashboard</title>
-
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -28,9 +27,9 @@
       </div>
 
       <div class="timeframes">
-        <p>Daily</p>
-        <p>Weekly</p>
-        <p>Monthly</p>
+        <a href="#" id="daily-button">Daily</a>
+        <a href="#" id="weekly-button">Weekly</a>
+        <a href="#" id="monthly-button">Monthly</a>
       </div>
 
     </div>
@@ -42,10 +41,10 @@
         <div class="element-info">
           <div class="element-header">
             <p>Work</p>
-            <a href="#"></a>
+            <a href="#">...</a>
           </div>
-          <h1 id="current-work"></h1>
-          <p></p>
+          <h1 id="current-work">N/A</h1>
+          <h2>Last Week - N/A</h2>
         </div>
       </div>
 
@@ -54,10 +53,10 @@
         <div class="element-info">
           <div class="element-header">
             <p>Play</p>
-            <a href="#"></a>
+            <a href="#">...</a>
           </div>
-          <h1 id="current-play"></h1>
-          <p></p>
+          <h1 id="current-play">N/A</h1>
+          <h2>Last Week - N/A</h2>
         </div>
       </div>
 
@@ -66,10 +65,10 @@
         <div class="element-info">
           <div class="element-header">
             <p>Study</p>
-            <a href="#"></a>
+            <a href="#">...</a>
           </div>
-          <h1 id="current-study"></h1>
-          <p></p>
+          <h1 id="current-study">N/A</h1>
+          <h2>Last Week - N/A</h2>
         </div>
       </div>
 
@@ -78,10 +77,10 @@
         <div class="element-info">
           <div class="element-header">
             <p>Exercise</p>
-            <a href="#"></a>
+            <a href="#">...</a>
           </div>
-          <h1 id="current-exercise"></h1>
-          <p></p>
+          <h1 id="current-exercise">N/A</h1>
+          <h2>Last Week - N/A</h2>
         </div>
       </div>
 
@@ -90,10 +89,10 @@
         <div class="element-info">
           <div class="element-header">
             <p>Social</p>
-            <a href="#"></a>
+            <a href="#">...</a>
           </div>
-          <h1 id="current-social"></h1>
-          <p></p>
+          <h1 id="current-social">N/A</h1>
+          <h2>Last Week - N/A</h2>
         </div>
       </div>
 
@@ -102,10 +101,10 @@
         <div class="element-info">
           <div class="element-header">
             <p>Self Care</p>
-            <a href="#"></a>
+            <a href="#">...</a>
           </div>
-          <h1 id="current-selfcare"></h1>
-          <p></p>
+          <h1 id="current-selfcare">N/A</h1>
+          <h2>Last Week - N/A</h2>
         </div>
       </div>
 
@@ -119,7 +118,7 @@
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Carlos Pujols</a>.
   </div>
 </body>
 </html>
