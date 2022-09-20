@@ -11,6 +11,12 @@ body {
     background-color: hsl(226, 43%, 10%);
 }
 
+body button{
+    background-color: #ffffff00;
+    font-family: 'Rubik', sans-serif;
+    border: none;
+}
+
 .global-container{
     margin-left: auto;
     margin-right: auto;
@@ -65,7 +71,7 @@ body {
     border-radius: 15px;
 }
 
-.timeframes a {
+.timeframes button {
     opacity: 50%;
     margin-bottom: 1rem;
     display: flex;
@@ -75,12 +81,12 @@ body {
     color: #FFFFFF;
 }
 
-.timeframes a:hover{
+.timeframes button:hover{
     color: hsl(235, 45%, 61%);
     opacity: 100%;
 }
 
-.timeframes a:active{
+.timeframes button:active{
     opacity: 100%;
     color: #FFFFFF;
 }
