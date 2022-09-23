@@ -84,6 +84,7 @@ body button{
 .timeframes button:hover{
     color: hsl(235, 45%, 61%);
     opacity: 100%;
+    cursor: pointer;
 }
 
 .timeframes button:active{
@@ -181,11 +182,14 @@ body button{
     grid-row: 2 / -1;
     background-color: hsl(235, 46%, 20%);
     border-radius: 15px;
-}
-
-.dashboard-element .element-info{
+    cursor: pointer;
     padding: 4vh;
     padding-bottom: 2vh;
+}
+
+.dashboard-element .element-info:hover{
+    background-color: hsl(235, 45%, 61%);
+
 }
 
 .dashboard-element .element-info .element-header{
@@ -206,6 +210,7 @@ body button{
     opacity: 50%;
     font-size: 2rem;
     margin-top: -2vh;
+    cursor: pointer;
 }
 
 .dashboard-element .element-info h1{

@@ -1,6 +1,6 @@
-var dailyButton = document.getElementById('daily-button');
+var dailyButton = document.getElementById('daily');
 
-dailyButton.addEventListener('click', loadDailyInfo());
+dailyButton.addEventListener('click', loadDailyInfo);
 
 function loadDailyInfo(){
     console.log('Clicked Daily Button');
@@ -8,9 +8,9 @@ function loadDailyInfo(){
 
 
 
-var weeklyButton = document.getElementById('weekly-button');
+var weeklyButton = document.getElementById('weekly');
 
-weeklyButton.addEventListener('click', loadWeeklyInfo());
+weeklyButton.addEventListener('click', loadWeeklyInfo);
 
 function loadWeeklyInfo(){
     console.log('Clicked Weekly Button');
@@ -19,9 +19,9 @@ function loadWeeklyInfo(){
 
 
 
-var monthlyButton = document.getElementById('monthly-button');
+var monthlyButton = document.getElementById('monthly');
 
-monthlyButton.addEventListener('click', loadMonthlyInfo());
+monthlyButton.addEventListener('click', loadMonthlyInfo);
 
 function loadMonthlyInfo(){
     console.log('Clicked Daily Button');
