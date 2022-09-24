@@ -92,6 +92,11 @@ body button{
     color: #FFFFFF;
 }
 
+.selected-button{
+    opacity: 100%;
+    color: #FFFFFF;
+}
+
 
 .dashboard{
     border-radius: 15px;
