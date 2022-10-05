@@ -24,13 +24,14 @@ body button{
     max-width: 70%;
     min-height: 70vh;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     gap: 2vh;
+    justify-content: center;
 }
 
 .first-panel{
     border-radius: 15px;
-    grid-column: 0 / 1;
+    grid-column: 1 / 2;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     background-color: hsl(235, 46%, 20%);
@@ -235,4 +236,40 @@ body button{
 
 .attribution{
     margin-top: 2vh;
+}
+
+@media (max-width: 376px) {
+
+    .global-container{
+        max-width: 95%;
+        grid-template-columns: 1fr;
+        margin-top: 5vh;
+        
+    }
+
+    .first-panel{
+        grid-column: 1 / -1;
+        max-width: 95%;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .timeframes{
+        grid-column: 1 / -1;
+        max-width: 95%;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .dashboard {
+        grid-column: 1 / -1;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 95%;
+    }
+    
 }
