@@ -26,7 +26,6 @@ body button{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2vh;
-    justify-content: center;
 }
 
 .first-panel{
@@ -238,29 +237,62 @@ body button{
     margin-top: 2vh;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 788px) {
 
     .global-container{
-        max-width: 95%;
+        min-width: 90%;
         grid-template-columns: 1fr;
-        margin-top: 5vh;
+        margin-top: 10vh;
         
     }
 
     .first-panel{
         grid-column: 1 / -1;
-        max-width: 95%;
+        width: 95%;
         justify-content: center;
         margin-left: auto;
         margin-right: auto;
+        max-height: 26vh;
     }
 
     .timeframes{
         grid-column: 1 / -1;
-        max-width: 95%;
+        width: 100%;
         justify-content: center;
         margin-left: auto;
         margin-right: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        max-height: 5vh;
+    }
+
+    .timeframes button{
+        font-size: 1rem;
+    }
+
+    .timeframes button:nth-of-type(1){
+        grid-column: 0 / 1;
+        margin-left: auto;
+        margin-right: auto;
+        max-height: 5vh;
+        margin-top: -2vh;
+
+    }
+
+    .timeframes button:nth-of-type(2){
+        grid-column: 2 / 3;
+        margin-left: auto;
+        margin-right: auto;
+        max-height: 5vh;
+        margin-top: -2vh;
+    }
+
+    .timeframes button:nth-of-type(3){
+        grid-column: 3 / 4;
+        margin-left: auto;
+        margin-right: auto;
+        max-height: 5vh;
+        margin-top: -2vh;
     }
 
     .dashboard {
@@ -271,5 +303,63 @@ body button{
         margin-right: auto;
         min-width: 95%;
     }
+
+
+    .user-info{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+    }
+
+    .avatar{
+        grid-column: 0 / 1;
+        margin-bottom: 0;
+    }
+
+    .user-info p{
+        grid-column: 2 / -1;
+        max-height: 5vh;
+        margin-top: 1.2vh;
+        margin-left: 2vh;
+        font-size: 0.8rem;
+    }
+
+    .user-info h1{
+        grid-column: 2 / -1;
+        margin-top: -8vh;
+        max-height: 15vh;
+        font-size: 1.3rem;
+        margin-left: 2vh;
+    }
+
+    .dashboard-element{
+        max-height: 19vh;
+    }
+
+    .element-info{
+        display: grid;
+        grid-template-areas: 
+        "a a a a"
+        "e f g g";
+    }
+
+    .element-header{
+        grid-area: a;
+    }
+
+    .dashboard-element .element-info h1{
+        grid-area: e;
+        font-size: 2rem;
+        margin-top: -5vh;
+    }
+
+    .dashboard-element .element-info h2{
+        grid-area: g;
+        margin-top: -3.2vh;
+        text-align: right;
+        justify-content: right;
+
+    }
+
     
 }
