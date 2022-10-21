@@ -67,6 +67,7 @@ function loadDailyInfo(){
     dailyButton.style.color = "white";
     dailyButton.style.opacity = "100%";
     weeklyButton.style.opacity = "50%";
+    monthlyButton.style.opacity = "50%";
     console.log('Clicked Daily Button');
 
     fetch('data.json')
@@ -89,12 +90,12 @@ function loadDailyInfo(){
         currentExercise.innerHTML = Info[3].timeframes.daily.current + singleHourCheck(Info[3].timeframes.daily.current);
         currentSocial.innerHTML = Info[4].timeframes.daily.current + singleHourCheck(Info[4].timeframes.daily.current);
         currentSelfCare.innerHTML = Info[5].timeframes.daily.current + singleHourCheck(Info[5].timeframes.daily.current);
-	    previousWork.innerHTML = 'Last Day - '+Info[0].timeframes.daily.previous + singleHourCheck(Info[0].timeframes.daily.previous);
-        previousPlay.innerHTML = 'Last Day - '+Info[1].timeframes.daily.previous + singleHourCheck(Info[1].timeframes.daily.previous);
-        previousStudy.innerHTML = 'Last Day - '+Info[2].timeframes.daily.previous + singleHourCheck(Info[2].timeframes.daily.previous);
-        previousExercise.innerHTML = 'Last Day - '+Info[3].timeframes.daily.previous + singleHourCheck(Info[3].timeframes.daily.previous);
-        previousSocial.innerHTML = 'Last Day - '+Info[4].timeframes.daily.previous + singleHourCheck(Info[4].timeframes.daily.previous);
-        previousSelfCare.innerHTML = 'Last Day - '+Info[5].timeframes.daily.previous + singleHourCheck(Info[5].timeframes.daily.previous);
+	    previousWork.innerHTML = 'Yesterday - '+Info[0].timeframes.daily.previous + singleHourCheck(Info[0].timeframes.daily.previous);
+        previousPlay.innerHTML = 'Yesterday - '+Info[1].timeframes.daily.previous + singleHourCheck(Info[1].timeframes.daily.previous);
+        previousStudy.innerHTML = 'Yesterday - '+Info[2].timeframes.daily.previous + singleHourCheck(Info[2].timeframes.daily.previous);
+        previousExercise.innerHTML = 'Yesterday - '+Info[3].timeframes.daily.previous + singleHourCheck(Info[3].timeframes.daily.previous);
+        previousSocial.innerHTML = 'Yesterday - '+Info[4].timeframes.daily.previous + singleHourCheck(Info[4].timeframes.daily.previous);
+        previousSelfCare.innerHTML = 'Yesterday - '+Info[5].timeframes.daily.previous + singleHourCheck(Info[5].timeframes.daily.previous);
     })
 }
 

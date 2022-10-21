@@ -304,7 +304,6 @@ body button{
         min-width: 95%;
     }
 
-
     .user-info{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -349,7 +348,7 @@ body button{
 
     .dashboard-element .element-info h1{
         grid-area: e;
-        font-size: 2rem;
+        font-size: 1.8rem;
         margin-top: -5vh;
     }
 
