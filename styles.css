@@ -22,7 +22,7 @@ body button{
     margin-right: auto;
     margin-top: 15vh;
     max-width: 70%;
-    min-height: 70vh;
+    max-height: 70%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2vh;
